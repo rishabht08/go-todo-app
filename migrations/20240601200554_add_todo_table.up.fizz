@@ -1,0 +1,7 @@
+create_table("todo") {
+  t.Column("id", "integer", {primary: true})
+  t.Column("task_name", "string", {"default": ""})
+  t.Column("description", "string", {"default": ""})
+  t.Column("completed", "boolean", {default: "FALSE"})
+  t.Column("user_id", "integer", {})
+}
